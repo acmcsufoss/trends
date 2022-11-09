@@ -13,3 +13,9 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# Environment variables (e.g. DISCORD_TOKEN)
+.env
+
+# Output directory of the trends preprocess subcommand
+results
