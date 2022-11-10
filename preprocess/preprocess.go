@@ -12,8 +12,6 @@ type ChatProvider interface {
 	Channel(id string) (Channel, error)
 	// Messages reads a range of messages from the channel.
 	Messages(id string, start, end time.Time) (MessageList, error)
-	// MessagesTimeRange reads a range of messages from the channel.
-	// MessagesTimeRange(id string, start, end time.Time) ([]Message, error)
 }
 
 type Channel struct {

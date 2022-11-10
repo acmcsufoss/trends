@@ -66,8 +66,8 @@ func RenderChannel(provider ChatProvider, id string, start, end time.Time) (*Ren
 		}
 
 		renderedAuthors[msg.AuthorID] = RenderedAuthor{
-			Name:   msg.Author.Name,
-			Avatar: msg.Author.Avatar,
+			Name:   messages.Authors[msg.AuthorID].Name,
+			Avatar: messages.Authors[msg.AuthorID].Avatar,
 		}
 	}
 
